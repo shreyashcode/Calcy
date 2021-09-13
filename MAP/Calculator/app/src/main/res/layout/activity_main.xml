@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Input some data"
+        android:textAlignment="textEnd"
+        android:textSize="40sp"
+        android:singleLine="true"
+        android:textColor="#0B0B0B"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdiv"
+                style="@style/cardStyle"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="/" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cmul"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="*" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cclear"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="C" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c0"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="0" />
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c7"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="7" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c8"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="8" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardStyle"
+                android:padding="10dp"
+                android:id="@+id/c9">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="9" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cminus"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="-" />
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="4" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c5"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="5" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardStyle"
+                android:id="@+id/c6"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="6" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cplus"
+                style="@style/cardStyle"
+                app:cardBackgroundColor="#1599C1">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="+" />
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                style="@style/cardStyle">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="2" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardStyle"
+                android:id="@+id/c3"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="3" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ceq"
+                style="@style/cardStyle"
+                app:cardBackgroundColor="#1599C1">
+
+                <TextView
+                    style="@style/textStyle"
+                    android:text="=" />
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
